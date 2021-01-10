@@ -430,19 +430,19 @@
                 </div>
 
                 <div class="col-md-9">
-                    <form autocomplete="off" action="mailto:madushalakruwan2nd@gmail.com" method="POST"
-                        enctype="multipart/form-data" id="emailForm">
+                    <form action="mailto:madushalakruwan2nd@gmail.com?subject=subject&body=body" enctype="text/plain"
+                        id="emailForm">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
                                 <input type="text" class="form-control" placeholder="Phone No.">
                             </div>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Email">
-                                <input type="text" class="form-control" placeholder="Subject">
+                                <input type="text" class="form-control" name="mail" placeholder="Email">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject">
                             </div>
                         </div>
-                        <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+                        <textarea class="form-control" rows="4" name="body" placeholder="Message"></textarea>
                         <div class="text-right">
                             <a href="javascript:{}" onclick="document.getElementById('emailForm').submit();"
                                 class="btn send-btn">Send</a>
